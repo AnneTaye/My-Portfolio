@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GBENOU Anne - Portfolio Génie Civil </title>
+  <meta name="description" content="Portfolio de Anne GBENOU, élève ingénieure en génie civil">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="#accueil" class="logo">Mon portfolio<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="hero-split">
+      <div class="hero-text">
+        <p class="eyebrow">Bonjour, je suis</p>
+        <h1>Anne GBENOU</h1>
+        <p class="role">Élève ingénieure en <span class="highlight">Génie Civil</span></p>
+        <p class="subtitle">Construction automatisée, Machine learning, IA  &amp; Développement web</p>
+        <div class="buttons">
+        <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+        <a href=" C:\Users\HP\Documents\Anne_comp\ProjetFinal_Portfolio\site\assets\images\CV_Anne_GBENOU.pdf" class="btn" target="_blank">Télécharger CV</a>
+        </div>
+      </div>
+       <div class="hero-image">
+        <div class="hero-image img "></div>
+      <img src="C:\Users\HP\Documents\Anne_comp\ProjetFinal_Portfolio\site\assets\images\my_picture.jpg" class="hero-image img">
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section">
+      <h2>À propos</h2>
+      <p>
+       Je suis Anne GBENOU élève ingénieure en Génie Civil, je m'intéresse particulièrement à l'amélioration des performances des infrastructures 
+        à travers l'innovation. Passionnée par la construction automatisée, le machine learning, le déveoppement web et les applications de l'intelligence artificielle dans le génie civil,
+        je développe une approche orientée vers l'intégration de ces technologies dans le domaine.
+      </p>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section section-alt">
+      <h2>Compétences</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Génie civil</h3>
+          <p>Structures, hydraulique, géotechnique, dimensionnement d'ouvrages.</p>
+        </article>
+        <article class="card">
+          <h3>BIM &amp; modélisation</h3>
+          <p>Maquette numérique, coordination de projet, modélisation 3D.</p>
+        </article>
+        <article class="card">
+          <h3>Tech &amp; IA</h3>
+          <p>Python, Machine Learning, vision par ordinateur, développement web.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- APERÇU PROJETS -->
+    <section id="projets-apercu" class="section">
+      <h2>Projets</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Simulateur de stabilisation de pont</h3>
+          <p>Modèle physique combiné au Machine Learning pour la prédiction de charges.</p>
+          <span class="badge">Python · ML</span>
+        </article>
+        <article class="card">
+          <h3>Détection d'EPI sur chantier</h3>
+          <p>Détection en temps réel (casque, gilet) par webcam avec YOLOv8.</p>
+          <span class="badge">YOLOv8 · Vision</span>
+        </article>
+        <article class="card">
+          <h3>Détection de fissures</h3>
+          <p>Vision par ordinateur pour la détection de fissures routières.</p>
+          <span class="badge">Computer Vision</span>
+        </article>
+      </div>
+      <a href="projects.html" class="btn btn-secondary">Tous les projets</a>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <h2>Contact</h2>
+      <form id="contactForm" name="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <p id="formFeedback" class="form-feedback" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Anne GBENOU. Tous droits réservés.</p>
+    <div class="social-links">
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
